@@ -2,3 +2,21 @@ body{
     background: url('signup.png') no-repeat center fixed;
     background-size: cover;
 }
+
+.button{
+    background-color: rgb(241, 181, 181);
+    font-size: 35px;
+    margin-top: 40px;
+    margin-left: 30px; 
+    position: relative;
+    border-radius: 18px;
+}
+
+#signup-div{
+    width: 500px;
+    background-color: pink;
+}
+.signup{
+    display: flex;
+    flex-direction: column;
+}

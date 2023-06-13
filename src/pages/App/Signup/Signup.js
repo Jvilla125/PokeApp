@@ -1,13 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import './Signup.css'
+import {Link} from "react-router-dom";
 
 export default function Signup(){
+    const [state, setState] = useState({
+        username: "",
+        password: "",
+        passwordCon: "",
+        email: ""
+    })
+
     return(
         <>
-        <div className="signup">
-        <h1>
-            This will be the signup page
-        </h1>
+        <Link to="/"><button type="button" className="button" > Return Back Home </button></Link>
+        <div><h1>Welcome to PokeApp!</h1></div>
+        <div id="signup-div">
+        <h1>Sign up!</h1>
+            <form className="signup">
+                <label>Username</label>
+                <input type="username"></input>
+                <label>Password</label>
+                <input type="password"></input>
+                <label>Password Confirmation</label>
+                <input type="passwordCon"></input>
+                <label>Email</label>
+                <input type="email"></input>
+            </form>
         </div>
         </>
     )
