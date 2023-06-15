@@ -12,6 +12,7 @@ export default function Signup(){
 
     return(
         <>
+        
         <Link to="/"><button type="button" className="button" > Return Back Home </button></Link>
         <div><h1>Welcome to PokeApp!</h1></div>
         <div id="signup-div">
