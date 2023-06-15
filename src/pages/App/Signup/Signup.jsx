@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import './Signup.css'
 import {Link} from "react-router-dom";
 
+import ReturnHome from "../../../components/Returnhome/Returnhome";
+
 export default function Signup(){
     const [state, setState] = useState({
         username: "",
@@ -12,8 +14,8 @@ export default function Signup(){
 
     return(
         <>
-        
-        <Link to="/"><button type="button" className="button" > Return Back Home </button></Link>
+        <ReturnHome/>
+        {/* <Link to="/"><button type="button" className="button" > Return Back Home </button></Link> */}
         <div><h1>Welcome to PokeApp!</h1></div>
         <div id="signup-div">
         <h1>Sign up!</h1>

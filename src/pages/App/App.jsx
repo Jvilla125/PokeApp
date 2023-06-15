@@ -21,14 +21,3 @@ function App() {
 
 export default App;
 
-
-
-// div style={{ background: color }}>
-//         <Router>
-//           <div><Link to="/"> Home</Link></div>
-//           <Header />
-//           <Route>
-//             <Route path="/signup" element={<Signup />} />
-//           </Route>
-//         </Router>
-//       </div>
