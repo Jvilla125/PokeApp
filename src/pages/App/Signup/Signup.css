@@ -11,12 +11,29 @@
     position: relative;
     border-radius: 18px;
 }
-
-#signup-div{
-    width: 500px;
-    background-color: pink;
+h1{
+    text-align: center;
 }
+#signup-div{
+    width: 40%;
+    background-color: pink;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
 .signup{
     display: flex;
     flex-direction: column;
+}
+
+
+
+@media screen and (max-width: 576px) {
+    #signup-div{
+        width: 80%;
+    }
+
 }

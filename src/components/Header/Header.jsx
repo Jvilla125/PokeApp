@@ -1,25 +1,22 @@
 import React from "react";
-import {Link} from "react-router-dom";
-
+import { Link } from "react-router-dom";
+import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
 import './Header.css';
-
-
 
 function Header() {
     return (
-        <div className="header">
-            <div>
-                <h1>Home</h1>
-            </div>
-            <div>
-                <h1>Welcome to PokeApp</h1>
-            </div>
-            <ul id="starter">
-                <li><Link to="/login"><h1>Login</h1></Link></li>
-                <li><Link to="/signup"><h1>Sign up</h1></Link></li>
-            </ul>
-        </div>
-    )
+      <Navbar bg="dark" data-bs-theme="dark">
+      <Container>
+        <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+        <Nav className="me-auto">
+          <Nav.Link href="#home">Home</Nav.Link>
+          <Nav.Link href="#features">Features</Nav.Link>
+          <Nav.Link href="#pricing">Pricing</Nav.Link>
+        </Nav>
+      </Container>
+    </Navbar>
+    );
+    
 }
 
 export default Header;
