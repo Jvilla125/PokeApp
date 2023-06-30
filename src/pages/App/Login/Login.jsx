@@ -22,7 +22,7 @@ export default function Login() {
         <Container fluid>
             <ReturnHome />
             <Row className="mt-5 justify-content-md-center">
-                <Col md={4}>
+                <Col md={5}>
                     <h1 className="login">Welcome to PokeApp!</h1>
                     <Form className="p-4 mt-3 login text-center" noValidate validated={validated} onSubmit={handleSubmit}>
                         <h2><u>Log in</u></h2>
