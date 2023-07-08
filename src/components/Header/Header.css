@@ -1,4 +1,4 @@
-.header{
+/* .header{
     background-color: rgb(209, 209, 87);
     position: fixed;
     top: 0;
@@ -19,20 +19,9 @@ ul {
 li{
     float: right;
     padding: 5px;
-}  
+}   */
 
-@media screen and (max-width: 500px) {
-    .header{
-        background-color: red;
-        float: none;
-        display: flex;
-    align-items: center;
-    justify-content: space-around;
-    }
-
-    li{
-        float: none;
-    }
-    
-
+Navbar{
+    background-color: rgb(209, 209, 87);
+    z-index: 2;
 }
